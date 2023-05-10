@@ -247,7 +247,7 @@ Pay(){
       // Razorpay Payment Gateway
       this.options = {
     "key": "rzp_test_XMtH9sEv4gUKNn", // Enter the Key ID generated from the Dashboard
-    "amount": this.GrandTotal, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    "amount": Math.ceil(this.GrandTotal), // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
     "currency": "INR",
     "name": "FreshCart", //your business name
     "description": "Test Transaction",
